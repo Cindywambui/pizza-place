@@ -1,0 +1,8 @@
+#introduction {
+    background-image: url(../images/pizzabackground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
