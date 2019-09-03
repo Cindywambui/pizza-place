@@ -14,24 +14,25 @@
 <body>
     <div class="container" id="introduction">
         <div class="container-fluid" id="introductioncontent">
-            <div id="introduction-text">
-                <header>
-                    <h1><strong>WAMBUI'S PIZZA PLACE</strong></h1>
-                </header>
-                <div id=text>
-                    <P><strong>Yummy!must be the pizza</strong></P>
+            <div class="introductioncontent">
+                <div id="introduction-text">
+                    <header>
+                        <h1><strong>WAMBUI'S PIZZA PLACE</strong></h1>
+                    </header>
+                    <P><em>Yummy!must be the pizza</em></P>
+                </div>
+                <div class="navigationbar">
+                    <p></p>
+
+                    <a href="#introduction">HOME</a><br>
+                    <a href="#wambuisplaceinfo">ABOUT US</a><br>
+                    <a href="#pizzas">PIZZAS</a><br>
+                    <a href="#crustsandtoppings">CRUSTS AND TOPPINGS</a><br>
+                    <a href="#orderanddeliver">ORDER AND DELIVER</a><br>
                 </div>
             </div>
         </div>
-        <div class="navigationbar">
-            <ul>
-                <li> <a href="#introduction">HOME</a></li>
-                <li> <a href="#wambuisplaceinfo">ABOUT US</a></li>
-                <li> <a href="#pizzas">PIZZAS</a></li>
-                <li> <a href="#crustsandtoppings">CRUSTS AND TOPPINGS</a></li>
-                <li> <a href="#orderanddeliver">ORDER AND DELIVER</a></li>
-            </ul>
-        </div>
+
         <div class="container-fluid" id="wambuisplaceinfo">
             <h1><strong>ABOUT US</strong></h1>
             <p>Wambui's pizza place was originally founded by our very own central kenyan chef <em>"WAMBUI
@@ -40,9 +41,9 @@
                 world
                 class
                 chefs ,She has gained the perfect recipe to whip up something special in four significant pieces.
-                <h3>OUR LOCATION</h3>
+                <h3><strong>LOCATION</strong></h3>
                 We are located at Hurlingham,at total near TOTAL HURLINGAM along mbagathiway.
-                <h3>CONTACT DETAILS</h3>
+                <h3><strong>CONTACT DETAILS</strong></h3>
                 <ul>
                     <li>Find us at our email @wambuipizzaplace@gmail.com.</li>
                     <li> mobile: +254-712345678</li>
@@ -59,49 +60,40 @@
                     </div>
                     <div class="pizzascontent" id="pizzascontent">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="card" id="margheritapizza">
-                                    <div class="card-body">
-                                        <img src="images/margherita.jpeg" class="margherita-img" alt="...">
-                                    </div>
-                                    <div class="card-title">
-                                        <h3 class="margherita" id="margheritahide"><em>margherita</em></h3>
-                                    </div>
+                            <div class="card" id="margheritapizza">
+                                <div class="card-body">
+                                    <img src="images/margherita.jpeg" class="margherita-img" alt="...">
+                                </div>
+                                <div class="card-title">
+                                    <h3 class="margherita" id="margheritahide"><em>margherita</em></h3>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card" id="contanidapizza">
-                                    <div class="card-body">
-                                        <img src="images/contadina.jpeg" class="contanida-img" alt="...">
-                                    </div>
-                                    <div class="card-title">
-                                        <h3 class="contanida" id="contanidahide"><em>contadina</em></h3>
-                                    </div>
+                            <div class="card" id="contanidapizza">
+                                <div class="card-body">
+                                    <img src="images/contadina.jpeg" class="contanida-img" alt="...">
+                                </div>
+                                <div class="card-title">
+                                    <h3 class="contanida" id="contanidahide"><em>contadina</em></h3>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card" id="frutidimarepizza">
-                                    <div class="card-body">
-                                        <img src="images/fruitidimarta.jpeg" class="frutidimare-img" alt="...">
-                                    </div>
-                                    <div class="card-title">
-                                        <h3 class="frutidimare" id="contanidahide"><em>Frutti-di-mare</em></h3>
-                                    </div>
+                            <div class="card" id="frutidimarepizza">
+                                <div class="card-body">
+                                    <img src="images/fruitidimarta.jpeg" class="frutidimare-img" alt="...">
+                                </div>
+                                <div class="card-title">
+                                    <h3 class="frutidimare" id="contanidahide"><em>Frutti-di-mare</em></h3>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card" id="sardapizza">
-                                    <div class="card-body">
-                                        <img src="images/sarda.jpeg" class="sardapizza-img" alt="...">
-                                    </div>
-                                    <div class="card-title">
-                                        <h3 class="sarda" id="sardahide"><em>sarda</em></h3>
-                                    </div>
+                            <div class="card" id="sardapizza">
+                                <div class="card-body">
+                                    <img src="images/sarda.jpeg" class="sardapizza-img" alt="...">
+                                </div>
+                                <div class="card-title">
+                                    <h3 class="sarda" id="sardahide"><em>sarda</em></h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-4">
                     <div id="crustsandtoppings" class="clickeable2">
@@ -233,18 +225,7 @@
                                         <p>$1.50</p>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="toppingsoption" id="toppingsoption">
-                                <h3>CHOOSE YOUR TOPPING:</h3>
-                                <p>All exta toppings are charged according to the pizza size.
-                                </p>
-                                <select>
-                                    <option value="0.5$ small"></option>
-                                    <option value="1.0$ medium/regular"></option>
-                                    <option value="1.5$ large"></option>
-                                    <option value="2.0 $ mega"></option>
-                                </select>
-                            </div>
+                            </div>                           
                             <div class="pizzanumber">
                                 <label for="pizzanumber">Number of pizzas</label>
                                 <input id="pizzanumber" type="number">
@@ -278,13 +259,13 @@
                                     </ul>
                                 </p>
                             </div>
-                            <button class="btn btn-order" type="submit">ORDER</button>
-                        </form><br><br>
-                        <p id="afterstatement">The total cost for your your purchase is: </p>
-                        <p>
-                            click the button below to include your delivery cost in the total cost.<br>
-                            <button class="btn btn-primary" id="deliverycost"> Total cost</button>
-                        </p>
+                            <button class="btn btn-primary" type="submit">ORDER</button>
+                            <p>
+                                    click the button below to include your delivery cost in the total cost.<br>
+                                    <button class="btn btn-primary" id="deliverycost"> Total cost</button>
+                                </p>
+                        </form><br>
+                        
                     </div>
                 </div>
             </div>
