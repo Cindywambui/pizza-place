@@ -14,8 +14,16 @@ $(document).ready(function () {
     })
     $("form#inputform").submit(function (event) {
         event.preventDefault();
-        var pizzaflavor = $("input:radio[name=flavor]:checked").val();
-        var pizzasize =$("input:radio[name=size]:checked").val();
+        var pizzaFlavor = $("input:radio[name=flavor]:checked").val();
+        var pizzaSize = $("input:radio[name=size]:checked").val();
         var crust = $("input:radio[name=crust]:checked").val();
+        if (pizzaFlavor == null) {
+            alert("Please select your pizza flavor")
+        } else if (pizzaSize == null) {
+            alert("Please select your pizza size")
+        } else if (crust == null) {
+            alert("please select your crust")
+        }
+        
     })
 });
