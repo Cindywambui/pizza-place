@@ -21,7 +21,7 @@ $(document).ready(function () {
         var pizzaFlavor = $("input:radio[name=flavor]:checked").val();
         var pizzaSize = $("input:radio[name=size]:checked").val();
         var crust = $("input:radio[name=crust]:checked").val();
-        var pizzaNumber = $(".pizzanumber").val();
+        var pizzaNumber = $("input#pizzanumber").val();
         var delivery = $("input:radio[name=delivery]:checked").val();
         if (pizzaFlavor == null) {
             alert("Please select your pizza flavor")
@@ -39,20 +39,25 @@ $(document).ready(function () {
             var costSize = 4.50
         } else if (pizzaSize == "medium") {
             var costSize = 7.50
-        }  else if (pizzaSize == "large") {
+        } else if (pizzaSize == "large") {
             var costSize = 10.50
-        }  else if (pizzaSize == "mega") {
+        } else if (pizzaSize == "mega") {
             var costSize = 13.50
-        }  
+        }
         if (crust == "Crispy") {
-            var crustPrice = 0.50            
+            var crustPrice = 0.50
         } else if (crust == "Stuffed") {
-            var crustPrice = 1.00             
-        } else if (crust == "Gluttenfree"){
+            var crustPrice = 1.00
+        } else if (crust == "Gluttenfree") {
             var crustPrice = 1.50
-        } 
-        var totalCost = (costSize+crustPrize)  
-        $("form#inputform").after(`<p> Your total charges are ${totalCost}`)    
+        }
+        
+        var totalCost = (costSize + crustPrice)              
+        if (pizzaNumber == 1) {
+            $("p#afterstatement").append(totalCost);
+        } else {
+            var completeCost = totalCost * pizzaNumber
+            $("p#afterstatement").append(completeCost);
+        }
     })
-
 });
