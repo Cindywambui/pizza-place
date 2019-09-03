@@ -53,16 +53,15 @@ $(document).ready(function () {
         }
         var totalCost = (costSize + crustPrice)
         if (pizzaNumber == 1) {
-            $("p#afterstatement").text(totalCost);
-            $("button#deliverycost").click(function(){
+            alert("The total cost for your order is:" + "" + totalCost + "" + "$");
+            $("button#deliverycost").click(function () {
                 var deliveryCost = 25.00
                 var newTotalCost = (costSize + crustPrice + deliveryCost)
-                alert("Your total cost is" + "" + newTotalCost);
-            })            
-        }
-        else {
+                alert("Your total cost is" + "" + newTotalCost + "$");
+            })
+        } else {
             var completeCost = totalCost * pizzaNumber
-            $("p#afterstatement").text(completeCost);
+            alert("The total cost for your order is:" + "" + completeCost + "$");
 
         }
     })
