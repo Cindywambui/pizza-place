@@ -1,8 +1,6 @@
 $(document).ready(function () {
-    $("#orderanddeliver").mouseenter(function () {
-        $("#orderingterms").fadeIn();
-    }).mouseleave(function () {
-        $("#orderingterms").fadeOut();
+    $("#orderanddeliver").click(function () {
+        $("#orderingterms").show();   
     })
     $("#pizzas").mouseenter(function () {
         $("#pizzascontent").fadeIn();
