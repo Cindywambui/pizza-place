@@ -12,6 +12,378 @@
 </head>
 
 <body>
+    <div class="container" id="introduction">
+        <div class="container-fluid" id="introductioncontent">
+            <div id="introduction-text">
+                <header>
+                    <h1><strong>WAMBUI'S PIZZA PLACE</strong></h1>
+                </header>
+                <div id=text>
+                    <P><strong>Yummy!must be the pizza</strong></P>
+                </div>
+            </div>
+        </div>
+        <div class="navigationbar">
+            <ul>
+                <li> <a href="#introduction">HOME</a></li>
+                <li> <a href="#pizzas">PIZZAS</a></li>
+                <li> <a href="#crustsandtoppings">CRUSTS AND TOPPINGS</a></li>
+                <li> <a href="#orderanddeliver">ORDER AND DELIVER</a></li>
+                <li> <a href="#wambuisplaceinfo">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <div class="container-fluid" id="navigation">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div id="pizzas" class="clickeable1">
+                        <h1><strong>PIZZAS</strong></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card" id="margheritapizza">
+                                <div class="card-body">
+                                    <img src="" class="margherita-img" alt="...">
+                                </div>
+                                <div class="card-title">
+                                    <h3 class="margherita" id="margheritahide"><em>margherita</em></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" id="contanidapizza">
+                                <div class="card-body">
+                                    <img src="" class="contanida-img" alt="...">
+                                </div>
+                                <div class="card-title">
+                                    <h3 class="contanida" id="contanidahide"><em>contadina</em></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" id="frutidimarepizza">
+                                <div class="card-body">
+                                    <img src="" class="frutidimare-img" alt="...">
+                                </div>
+                                <div class="card-title">
+                                    <h3 class="frutidimare" id="contanidahide"><em>Frutti-di-mare</em></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" id="sardapizza">
+                                <div class="card-body">
+                                    <img src="" class="sardapizza-img" alt="...">
+                                </div>
+                                <div class="card-title">
+                                    <h3 class="sarda" id="sardahide"><em>sarda</em></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="crustsandtoppings" class="clickeable2">
+                        <h1><strong>CRUSTS AND TOPPINGS</strong></h1>
+                    </div>
+                    <p>Select your crusts and toppings here:
+                        <div class="crusts" id="crusts">
+                            <h2>CRUSTS INCLUDE:</h2>
+                            <ul>
+                                <li>Crispy</li>
+                                <li>Stuffed</li>
+                                <li>Glutten free</li>
+                            </ul>
+                        </div>
+                        <div class="toppings" id="toppings">
+                            <h2>TOPPINGS INCLUDE:</h2>
+                            <ul>
+                                <li>Extra cheese</li>
+                                <li>Extra bacon</li>
+                                <li>EXtra chicken</li>
+                                <li>Extra meat</li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div id="orderanddeliver" class="clickeable3">
+                        <h1><strong>ORDER AND DELIVER</strong></h1>
+                    </div>
+                    <div class="orderingterms" id="ordering terms">
+                        <h2>How to order</h2>
+                        <ul>
+                            <li>selectthe pizza flavour of your choice</li>
+                            <li>select the size of your pizza</li>
+                            <li>Select the crust and toppings of your choice</li>
+                            <li>Input the amount of pizzas you want.</li>
+                            <li>Select whether you want your pizza to be submitted</li>
+                            <li>If you want your pizza delivered ,the delivery details will fade in after you click
+                                deliver.</li>
+                            <li>Submit your order by clicking the order button!</li>
+                        </ul>
+                        <form>
+                            <div class="pizza flavour" id="pizzaflavour">
+                                <h3>CHOOSE YOUR PIZZA FLAVOUR:</h3>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="flavor" value="margherita">
+                                        margherita
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="flavor" value="contadina">
+                                        contadina
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="flavor" value="Frutti-di-mare">
+                                        Frutti-di-mare
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="flavor" value="Sarda">
+                                        Sarda
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="pizzasize" id="pizzasize">
+                                <h3>CHOOSE YOUR PIZZA SIZE:</h3>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="size" value="small">
+                                        small
+                                    </label>
+                                </div>
+                                <p>$4.50</p>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="size" value="medium">
+                                        medium
+                                    </label>
+                                </div>
+                                <p>$7.50</p>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="size" value="large">
+                                        large
+                                    </label>
+                                </div>
+                                <p>$10.50</p>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="size" value="mega">
+                                        mega
+                                    </label>
+                                </div>
+                                <p>13.50</p>
+                                <ul>
+                                    <li>
+                                        <h3>CHOOSE YOUR CRUST:</h3>
+
+
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="crust" value="Crispy">
+                                                Crispy
+                                            </label>
+                                        </div>
+                                        <p>$5.00</p>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="crust" value="Stuffed">
+                                                Stuffed
+                                            </label>
+                                        </div>
+                                        <p>$7.00</p>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="crust" value="Gluttenfree">
+                                                Gluttenfree
+                                            </label>
+                                        </div>
+                                        <p>$10.00</p>
+
+                                    </li>
+
+                                    <li>
+                                        <h3>CHOOSE YOUR TOPPING:</h3>
+                                        <p>All exta toppings are charged according to the pizza size.
+                                            <ul>
+                                                <div class="smalltoppings" id="smalltoppings">
+                                                    <li>SMALL : $0.50</li>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extracheese">
+                                                            Extra cheese
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrabacon">
+                                                            Extra bacon
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrachicken">
+                                                            Extra chicken
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrameat">
+                                                            Extra meat
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="regulartoppings" id="regulartoppings">
+                                                    <li>MEDIUM/REGULAR : $1.00</li>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extracheese">
+                                                            Extra cheese
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrabacon">
+                                                            Extra bacon
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrachicken">
+                                                            Extra chicken
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrameat">
+                                                            Extra meat
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="largetoppings" id="largetoppings">
+                                                    <li>LARGE : $1.50</li>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extracheese">
+                                                            Extra cheese
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrabacon">
+                                                            Extra bacon
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrachicken">
+                                                            Extra chicken
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrameat">
+                                                            Extra meat
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="megatoppings" id="megatoppings">
+                                                    <li>MEGA : $2.00</li>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extracheese">
+                                                            Extra cheese
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrabacon">
+                                                            Extra bacon
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrachicken">
+                                                            Extra chicken
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="toppings" value="extrameat">
+                                                            Extra meat
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </p>
+
+                                    </li>
+                            </div>
+                            <div class="pizzanumber">
+                                <label for="pizzanumber">Number of pizzas</label>
+                                <input id="pizzanumber" type="number">
+                            </div>
+                            <p>Would you like your pizza delivered?</p>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="delivery" value="notdeliveringpizza">
+                                    no
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="delivery" value="deliveringpizza">
+                                    yes
+                                </label>
+                            </div>
+                            <div class="deliveryterms">
+                                <h2>Delivery details</h2>
+                                <p>
+                                    <ul>
+                                        <li>Delivery costs are $25.00 reduardless of the location.</li>
+                                        <li>Delivery will be done at maximum 2 hours,Depending on traffic.</li>
+                                        <li>Your location details need to be precise if not Delivery shall not be made.
+                                        </li>
+                                        <li>Payment will be made after delivery.</li>
+                                        <li>The delivery contacts are on the home page.</li>
+                                        <li>Incase of delay or failed delivery,kindly contact us and report the
+                                            malfunction.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <button class="btn btn-order">ORDER</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="wambuisplaceinfo">
+                <h1><strong>ABOUT US</strong></h1>
+                <p>Wambui's pizza place was originally founded by our very own central kenyan chef <em>"WAMBUI
+                        NDUNDA"</em>
+                    .With an intense knowlege of making pizzas from her achieved acknowlegements such as working with
+                    world
+                    class
+                    chefs ,She has gained the perfect recipe to whip up something special in four significant pieces.
+                    <h3>OUR LOCATION</h3>
+                    We are located at Hurlingham,at total near TOTAL HURLINGAM along mbagathiway.
+                    <h3>CONTACT DETAILS</h3>
+                    <ul>
+                        <li>Find us at our email @wambuipizzaplace@gmail.com.</li>
+                        <li> mobile: +254-712345678</li>
+                        <li>telephone: +254-702345678</li>
+                        <li>Our online deliveries: +254-708976543</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
