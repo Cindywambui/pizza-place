@@ -12,6 +12,9 @@ $(document).ready(function () {
     }).mouseleave(function () {
         $("#crustsandtoppingscontent").fadeOut();
     })
+    $("#delivering").click(function () {
+        $(".deliveryterms").show()    
+    })
     $("form#inputform").submit(function (event) {
         event.preventDefault();
         var pizzaFlavor = $("input:radio[name=flavor]:checked").val();
@@ -24,6 +27,6 @@ $(document).ready(function () {
         } else if (crust == null) {
             alert("please select your crust")
         }
-        
+
     })
 });
