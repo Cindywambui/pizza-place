@@ -1,3 +1,4 @@
+// userlogic:
 $(document).ready(function () {
     $("#orderanddeliver").click(function () {
         $("#orderingterms").show();
@@ -33,5 +34,25 @@ $(document).ready(function () {
         } else if (delivery == null) {
             alert("Please select your delivery option")
         }
+
+        if (pizzaSize == "small") {
+            var costSize = 4.50
+        } else if (pizzaSize == "medium") {
+            var costSize = 7.50
+        }  else if (pizzaSize == "large") {
+            var costSize = 10.50
+        }  else if (pizzaSize == "mega") {
+            var costSize = 13.50
+        }  
+        if (crust == "Crispy") {
+            var crustPrice = 0.50            
+        } else if (crust == "Stuffed") {
+            var crustPrice = 1.00             
+        } else if (crust == "Gluttenfree"){
+            var crustPrice = 1.50
+        } 
+        var totalCost = (costSize+crustPrize)  
+        $("form#inputform").after(`<p> Your total charges are ${totalCost}`)    
     })
+
 });
