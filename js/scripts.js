@@ -1,4 +1,4 @@
-// userlogic:
+
 $(document).ready(function () {
     $("#orderanddeliver").click(function () {
         $("#orderingterms").show();
@@ -21,7 +21,7 @@ $(document).ready(function () {
         var pizzaFlavor = $("input:radio[name=flavor]:checked").val();
         var pizzaSize = $("input:radio[name=size]:checked").val();
         var crust = $("input:radio[name=crust]:checked").val();
-        var pizzaNumber = $("input#pizzanumber").val();
+        var pizzaNumber = parseInt($("input#pizzanumber").val());
         var delivery = $("input:radio[name=delivery]:checked").val();
         if (pizzaFlavor == null) {
             alert("Please select your pizza flavor")
@@ -51,13 +51,19 @@ $(document).ready(function () {
         } else if (crust == "Gluttenfree") {
             var crustPrice = 1.50
         }
-        
-        var totalCost = (costSize + crustPrice)              
+        var totalCost = (costSize + crustPrice)
         if (pizzaNumber == 1) {
-            $("p#afterstatement").append(totalCost);
-        } else {
+            $("p#afterstatement").text(totalCost);
+            $("button#deliverycost").click(function(){
+                var deliveryCost = 25.00
+                var newTotalCost = (costSize + crustPrice + deliveryCost)
+                alert("Your total cost is" + "" + newTotalCost);
+            })            
+        }
+        else {
             var completeCost = totalCost * pizzaNumber
-            $("p#afterstatement").append(completeCost);
+            $("p#afterstatement").text(completeCost);
+
         }
     })
 });
