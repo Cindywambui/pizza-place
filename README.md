@@ -32,6 +32,7 @@ GitHub profile [Cindy wambui]
 Primary email address:montanacindy5@gmail.com
 
 live link: 
+https://cindywambui.github.io/pizza-place/
 
 **License**
 
