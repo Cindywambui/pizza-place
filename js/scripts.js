@@ -51,6 +51,10 @@ $(document).ready(function () {
         } else if (crust == "Gluttenfree") {
             var crustPrice = 1.50
         }
+        if (delivery == "deliveringpizza") {
+            var message = prompt("Type in your area of delivery")
+            alert("Your pizza will be delivered to your location" + "" + message)
+        }
         var totalCost = (costSize + crustPrice)
         if (pizzaNumber == 1) {
             alert("The total cost for your order is:" + "" + totalCost + "" + "$");
@@ -62,7 +66,11 @@ $(document).ready(function () {
         } else {
             var completeCost = totalCost * pizzaNumber
             alert("The total cost for your order is:" + "" + completeCost + "$");
-
+            $("button#deliverycost").click(function () {
+                var deliveryCost = 25.00
+                var newTotalCost = (costSize + crustPrice + deliveryCost)
+                alert("Your total cost is" + "" + newTotalCost + "$");
+            })
         }
     })
 });
